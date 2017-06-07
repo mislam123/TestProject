@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestAll]">
+  <test name="order(failed)">
+    <classes>
+      <class name="com.qa.TestProject.MobileAutomationExercise_03">
+        <methods>
+          <include name="AndroidAutomation"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.qa.TestProject.MobileAutomationExercise_03 -->
+    </classes>
+  </test> <!-- order(failed) -->
+</suite> <!-- Failed suite [TestAll] -->
