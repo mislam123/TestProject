@@ -1,0 +1,73 @@
+{
+  "config": {
+     "target": "https://venuenext-dev-stadium.venuenext.net",
+     "phases": [
+        {
+           "duration": 5,
+           "arrivalRate": 2
+        }
+     ]
+  },
+ "scenarios": [
+   {
+     "flow": [
+       {
+         "post": {
+           "url": "/pos/orders",
+           "headers": {
+             "Authorization": "Bearer eyJhdWQiOiJwb3MtY3Vicy0wMWRrd2MzOGpzcGpzcHhranBxYjd3emF3ZiIsImFsZyI6IkVTMjU2In0.eyJzdWIiOiJiMDc3MGE2Mi0yNTk0LTQ4M2UtYjFlZC0yNzI4ZGQ0NTZmZTciLCJpc3MiOiJodHRwczovL3ZlbnVlbmV4dC1kZXYtcG9ydGljby52ZW51ZW5leHQubmV0IiwibmFtZSI6IiIsImVtYWlsIjoiMjhmY2YwNjQtMTk4My00YmZhLTljNGItN2UyOWExMmMwOGI2QHZlbnVlbmV4dC5jb20iLCJnaXZlbl9uYW1lIjpudWxsLCJmYW1pbHlfbmFtZSI6bnVsbCwicGljdHVyZSI6bnVsbCwiem9uZWluZm8iOm51bGwsImxvY2FsZSI6ImVuX1VTIiwid2lzZG9tX2FjY2VzcyI6bnVsbCwicHJlZmVycmVkX2xhbmRpbmdfcGFnZSI6bnVsbCwicGhvbmVfbnVtYmVyIjpudWxsLCJleHAiOjE1OTMxMDI4OTMsImp0aSI6ImQ1ZTBkNWUzLWRiOGItNDY1MS1iNjkzLTRlZTUyMWMxYmY0MiIsImFwcF9yb2xlIjpbInBvcyIsImN1YnMiXSwiZGV2aWNlX2lkIjoiMjhmY2YwNjQtMTk4My00YmZhLTljNGItN2UyOWExMmMwOGI2IiwicGVybSI6WyJjdWJzLWRldi1wb3MiXX0.kNiPsSAgkyi9OihFypnc9QfaIjQYSPQm_ZQbaSjHyHYZJ9dZTFEIWvwQTBAslLC8l5fwNj5fA4S-hQAhx6DpdA"
+           },
+           "json": {
+             "client_created_at": "2020-06-17T18:54:27.830Z",
+             "customer_id": null,
+             "order_menu_items": [{
+                 "uuid": "b6ab6d28-9592-40c3-b7f3-51c35bff698e",
+                 "menu_item_uuid": "d0c1fb86-4b71-4770-9bc7-fcdf1faa366c",
+                 "quantity": 1,
+                 "price_in_cents": 500,
+                 "modifiers": [
+                     []
+                 ],
+                 "notes": null
+             }, {
+                 "uuid": "697ff1c9-4e1d-4da8-b417-43a035b8e1ac",
+                 "menu_item_uuid": "cab7cd2b-0a8c-4774-89da-a233b0d8a729",
+                 "quantity": 1,
+                 "price_in_cents": 100,
+                 "modifiers": [
+                     []
+                 ],
+                 "notes": null
+             }, {
+                 "uuid": "8c87548c-d152-43f2-933c-b08f92441b5c",
+                 "menu_item_uuid": "e99f3022-98ce-42e7-aaa1-6e358afd0fad",
+                 "quantity": 1,
+                 "price_in_cents": 100,
+                 "modifiers": [
+                     []
+                 ],
+                 "notes": null
+             }],
+             "order_number": 494010,
+             "payments": [{
+                 "amount_in_cents": 700,
+                 "payment_type": "cash"
+             }],
+             "payment_type": "cash",
+             "promotions": [],
+             "stand_menu_uuid": "cefed5ed-6d05-4867-b9b3-a2f45091c929",
+             "stand_uuid": "unassigned",
+             "state": "completed",
+             "tax_exempt": true,
+             "web_order": true
+             
+         }
+         }
+       },
+       {
+         "think": 10
+       }
+     ]
+   }
+ ]
+}
